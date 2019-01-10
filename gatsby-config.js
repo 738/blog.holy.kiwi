@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'blog.holy.kiwi',
     author: 'Jon Jee',
-    description: 'Personal blog by Jon Jee. I explain with words and code.',
+    description: 'Personal blog by Jon Jee. Done is better than Perfect.',
     siteUrl: 'https://blog.holy.kiwi',
     social: {
       twitter: '@iamjonjee',
@@ -74,7 +74,7 @@ module.exports = {
               return allMarkdownRemark.edges.map(edge => {
                 const siteUrl = site.siteMetadata.siteUrl;
                 const postText = `
-                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at overreacted.io. You can read it online by <a href="${siteUrl +
+                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at blog.holy.kiwi. You can read it online by <a href="${siteUrl +
                   edge.node.fields.slug}">clicking here</a>.)</div>
               `
 

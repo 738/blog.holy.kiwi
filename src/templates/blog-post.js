@@ -9,8 +9,8 @@ import Signup from '../components/Signup'
 import { formatReadingTime } from '../utils/helpers'
 import { rhythm, scale } from '../utils/typography'
 
-const GITHUB_USERNAME = 'gaearon'
-const GITHUB_REPO_NAME = 'overreacted.io'
+const GITHUB_USERNAME = 'JonJee'
+const GITHUB_REPO_NAME = 'blog.holy.kiwi'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -68,7 +68,7 @@ class BlogPostTemplate extends React.Component {
             }}
             to={'/'}
           >
-            Overreacted
+            blog.holy.kiwi
           </Link>
         </h3>
         <Bio />
