@@ -29,7 +29,7 @@ class Bio extends React.Component {
         <p style={{ maxWidth: 310 }}>
           Personal blog by <a href="https://github.com/JonJee">Jon Jee</a>.
           <br/>
-          Done is better than Perfect.
+          I hope to explain with words and code.
         </p>
       </div>
     )

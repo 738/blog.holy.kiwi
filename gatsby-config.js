@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'blog.holy.kiwi',
     author: 'Jon Jee',
-    description: 'Personal blog by Jon Jee. Done is better than Perfect.',
+    description: 'Personal blog by Jon Jee. I hope to explain with words and code.',
     siteUrl: 'https://blog.holy.kiwi',
     social: {
       twitter: '@iamjonjee',

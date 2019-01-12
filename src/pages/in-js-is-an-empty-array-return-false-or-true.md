@@ -25,7 +25,7 @@ false
 > !![]
 true
 ```
-* In Conversion, The result is like this, so I thought `''` is `false`, `[]` is `true`.
+* In Conversion, the result is like this, so I thought `''` is `false`, `[]` is `true`.
 
 ```javascript
 // Loose Equality
