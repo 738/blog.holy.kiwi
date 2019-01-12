@@ -12,17 +12,20 @@ Wordpress2016.overrideThemeStyles = () => ({
     boxShadow: 'none',
   },
   'p code': {
-    fontSize: '1.1rem'
+    fontSize: '1.1rem',
   },
   'li code': {
-    fontSize: '1rem'
+    fontSize: '1rem',
   },
   'h1, h2, h3, h4, h5, h6, p, li': {
     fontFamily: 'Noto Serif KR, Merriweather, Georgia, serif',
     color: '#495057'
   },
+  'h1': {
+    lineHeight: '3.3rem',
+  },
   'blockquote': {
-    fontSize: '1.1rem'
+    fontSize: '1.1rem',
   }
 })
 
