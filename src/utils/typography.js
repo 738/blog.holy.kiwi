@@ -17,6 +17,13 @@ Wordpress2016.overrideThemeStyles = () => ({
   'li code': {
     fontSize: '1rem'
   },
+  'h1, h2, h3, h4, h5, h6, p, li': {
+    fontFamily: 'Noto Serif KR, Merriweather, Georgia, serif',
+    color: '#495057'
+  },
+  'blockquote': {
+    fontSize: '1.1rem'
+  }
 })
 
 delete Wordpress2016.googleFonts

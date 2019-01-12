@@ -33,6 +33,7 @@
     "react-typography": "^0.16.13",
     "typeface-merriweather": "0.0.43",
     "typeface-montserrat": "0.0.43",
+    "typeface-noto-serif-kr": "0.0.63",
     "typography": "^0.16.17",
     "typography-theme-wordpress-2016": "^0.15.10"
   },
