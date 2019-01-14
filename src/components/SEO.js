@@ -33,12 +33,12 @@ function SEO({ meta, image, title, description, slug }) {
             htmlAttributes={{ lang: 'en' }}
             {...(title
               ? {
-                  titleTemplate: `%s - ${siteMetadata.title}`,
-                  title,
-                }
+                titleTemplate: `%s - ${siteMetadata.title}`,
+                title,
+              }
               : {
-                  title: siteMetadata.title,
-                })}
+                title: siteMetadata.title,
+              })}
             meta={[
               {
                 name: 'description',
@@ -76,19 +76,29 @@ function SEO({ meta, image, title, description, slug }) {
               .concat(
                 metaImage
                   ? [
-                      {
-                        property: 'og:image',
-                        content: metaImage,
-                      },
-                      {
-                        name: 'twitter:image',
-                        content: metaImage,
-                      },
-                    ]
+                    {
+                      property: 'og:image',
+                      content: metaImage,
+                    },
+                    {
+                      name: 'twitter:image',
+                      content: metaImage,
+                    },
+                  ]
                   : []
               )
               .concat(meta)}
-          />
+          >
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124758878-2"></script>
+              <script>
+                {`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments); }
+                  gtag('js', new Date());
+                  gtag('config', 'UA-124758878-2');
+                `}
+            </script>
+          </Helmet>
         )
       }}
     />
