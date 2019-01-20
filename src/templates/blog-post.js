@@ -5,7 +5,6 @@ import get from 'lodash/get'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import Signup from '../components/Signup'
 import { formatReadingTime } from '../utils/helpers'
 import { rhythm, scale } from '../utils/typography'
 
