@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
+import AdSense from 'react-adsense';
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
@@ -40,7 +41,21 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
           {` • ${formatReadingTime(post.timeToRead)}`}
         </p>
+        {/* <AdSense.Google
+          client='ca-pub-8206246491652082'
+          slot='6401258605'
+          style={{ display: 'block' }}
+          format='auto'
+          responsive='true'
+        /> */}
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        {/* <AdSense.Google
+          client='ca-pub-8206246491652082'
+          slot='6401258605'
+          style={{ display: 'block' }}
+          format='auto'
+          responsive='true'
+        /> */}
         {/* <p>
           <a href={discussUrl} target="_blank" rel="noopener noreferrer">
             Discuss on Twitter
