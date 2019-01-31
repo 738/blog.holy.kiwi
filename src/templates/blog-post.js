@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import AdSense from 'react-adsense';
+import { DiscussionEmbed } from "disqus-react";
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
@@ -14,14 +15,14 @@ const GITHUB_REPO_NAME = 'blog.holy.kiwi'
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const { previous, next, slug } = this.props.pageContext
-    const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/src/pages/${slug.replace(
-      /\//g,
-      ''
-    )}.md`
-    const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(`https://overreacted.io${slug}`)}`
+    const post = this.props.data.markdownRemark;
+    const siteTitle = get(this.props, 'data.site.siteMetadata.title');
+    const { previous, next, slug } = this.props.pageContext;
+    const disqusShortname = "junwooji";
+    const disqusConfig = {
+      identifier: post.id,
+      title: post.frontmatter.title,
+    };
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -44,7 +45,7 @@ class BlogPostTemplate extends React.Component {
         {/* <AdSense.Google
           client='ca-pub-8206246491652082'
           slot='6401258605'
-          style={{ display: 'block' }}
+          style={{ display: 'block', marginBottom: 20 }}
           format='auto'
           responsive='true'
         /> */}
@@ -52,7 +53,7 @@ class BlogPostTemplate extends React.Component {
         {/* <AdSense.Google
           client='ca-pub-8206246491652082'
           slot='6401258605'
-          style={{ display: 'block' }}
+          style={{ display: 'block', marginTop: 20 }}
           format='auto'
           responsive='true'
         /> */}
@@ -110,6 +111,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
+        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
       </Layout>
     )
   }
