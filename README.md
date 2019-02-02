@@ -12,3 +12,4 @@ To run locally, `npx gatsby develop`, then open https://localhost:8000.
 - [ ] SEO 신경 쓰기 (메타데이터)
 - [ ] og 이미지 추가
 - [ ] adsense 광고배너 추가
+- [ ] AMP 적용
