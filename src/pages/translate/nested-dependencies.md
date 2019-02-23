@@ -1,5 +1,5 @@
 ---
-title: 📘 [번역] Nested Dependencies 중첩된 종속성
+title: 📘 [번역] NPM의 중첩된 종속성
 date: '2019-02-23'
 spoiler: Nested Dependencies 번역 글입니다. NPM이 가진 Nested Dependencies라는 특성에 대해 알아봅시다.
 ---
