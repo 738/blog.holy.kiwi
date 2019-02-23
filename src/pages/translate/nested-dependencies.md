@@ -6,11 +6,15 @@ spoiler: Nested Dependencies 번역 글입니다. NPM이 가진 Nested Dependenc
 
 [원문: Nested Dependencies](https://maxogden.com/nested-dependencies.html)입니다.
 
+## ✌ 중첩된 종속성과 평평한 종속성 (Nested Dependencies and Flat Dependencies)
+
 오늘날 많은 패키지 매니저들이 있지만, 기본적으로 중첩된 종속성(nested dependencies)으로 작동하도록 설계된 패키지 매니저는 npm 밖에 없다. (내가 알기에는)
 
 ![nested-vs-flat-deps](https://maxogden.com/media/nested-vs-flat-deps.png)
 
 위 다이어그램에서 `deps` 컨테이너들은 종속성의 *고립된* 집합을 대표한다. 대부분의 패키지 매니저들은 모든 종속성에 대해서 하나의 '네임스페이스'를 갖는다. 나는 이 상태를 'flat' 이라고 부른다. 왜냐하면 종속성을 풀 때 오직 한 단계의 검색 용이성을 가진다는 것을 의미하기 때문이다. 그것은 앱 전체에서 'foo' 라는 이름을 가진 종속성이 하나만 있다는 것을 의미한다.
+
+## 🥙 평평한 종속성 (Flat Dependencies)
 
 flat 종속성 시스템에서 종속성 분해 작업이 어떻게 일어나는지에 대해 알아보기 위해 예제를 살펴보도록 하자.
 
@@ -20,23 +24,29 @@ flat 종속성 시스템에서 종속성 분해 작업이 어떻게 일어나는
 
 종속성이 flat하기 때문에 (우리 앱 전체에 오직 하나의 복사본만 가지고 있다는 것을 의미함) 우리 앱과 `c` 모두 `a`의 *호환되는 버전*에 의존하도록 해야한다는 것을 의미한다. 만약 우리가 `c`를 새로운 버전으로 업그레이드하고 싶다면, 그러나 새 버전이 우리 앱과 의존하고 있는 `a`와 호환되지 않는 버전의 `a`로 업그레이드한다면, 종속성 충돌이 발생한다. 이 현상은 "DLL 지옥" (Windows) 또는 더 일반적으로 "종속성 지옥" 이라고 한다.
 
+## 🐦 중첩된 종속성 (Nested Dependencies)
+
 이번에는 중첩된 종속성 시스템의 같은 예제를 살펴보자.
 
 ![nested-deps](https://maxogden.com/media/nested-deps.png)
 
-Here we don't just have one level of dependencies, we have multiple. Assume a and b have no dependencies. Our app and c both still depend on a.
+여기서는 한 단계의 종속성이 아니라 여러 단계의 종속성을 가지고 있다. `a`와 `b`가 종속성을 가지고 있지 않다고 가정하자. 우리 앱과 `c`는 모두 여전히 `a`에 의존하고 있다.
 
-With nested dependencies we now have two copies of a. If our app needs a at version 1 and c needs a at version 2 then there is we just install both versions of a. The dependencies of c are only available to c, nothing else can access them. Additionally, if it turns out that our app and c both depend on a compatible version of a, we never need to create the c's deps folder -- so the behavior in that case would mimic flat deps (this is how npm dedupe works).
+중첩된 종속성에서는 `a`의 두 복사본을 가지고 있다. 우리 앱이 `a`의 버전 1이 필요하고 `c`가 버전 2가 필요하다면 `a`의 두 버전을 모두 설치한다. `c`의 종속성들이 `c`에게만 이용 가능하고, 어떤 것도 그것들에 접근할 수 없다. 추가적으로, 우리 앱과 `c`가 모두 `a`와 호환되는 버전에 의존한다는 것이 드러난다면, `c의 deps` 폴더를 생성할 필요가 없다. 즉, 이 경우에는 flat deps처럼 보인다. (`npm dedupe`가 동작하는 방법이다.)
 
-Pros and Cons
-Flat
-The simpler of the two designs. It's up to you to decide how much complexity you want to deal with.
-Dependency conflicts (AKA dependency hell)
-Sometimes the only option for languages where you cannot load dependencies in isolation
-Nested
-No dependency conflicts
-Encourages use of small, isolated modules
-More complicated
-Good for languages like JavaScript with first class scoping support for isolating dependencies from each other
-Installs multiple copies of dependencies (when necessary), so takes up more disk space (though in practice this is rarely an issue because code is small).
-Confuses users who use dependencies that aren't designed to be modular (e.g. 'Why do I have five versions of jQuery in my browserify app?')
+## 🔖 장점과 단점
+
+### 평평한 종속성 (Flat Dependencies)
+
+* 두 가지 설계 중 더 단순하다. 얼마나 복잡한지를 결정하는 것은 사용자에게 달려있다.
+* 종속성 충돌이 일어날 수 있다. (a.k.a 종속성 지옥)
+* 종속성을 독립적으로 불러올 수 없는 언어의 유일한 옵션이다.
+
+### 중첩된 종속성 (Nested Dependencies)
+
+* 종속성 충돌이 일어나지 않는다.
+* 작고 고립된 모듈의 사용을 권장한다.
+* 더 복잡하다.
+* 서로의 종속성을 격리하기 위해 1급 객체 범위 지정을 지원하는 자바스크립트 같은 언어에 좋다.
+* 필요하다면 종속성의 여러 복사본을 설치한다. 즉, 더 많은 디스크 공간을 차지한다. (실제로 코드가 작기 때문에 거의 문제가 되지 않는다.)
+* 모듈형으로 설계되지 않은 종속성을 사용하는 사용자를 혼란스럽게 한다. (예: '왜 내 앱에 jQuery 5개 버전이 있지?')
