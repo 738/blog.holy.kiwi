@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Jon Jee <iam@holy.kiwi>",
   "bugs": {
-    "url": "https://github.com/jonjee/blog.holy.kiwi/issues"
+    "url": "https://github.com/738/blog.holy.kiwi/issues"
   },
   "dependencies": {
     "disqus-react": "^1.0.5",

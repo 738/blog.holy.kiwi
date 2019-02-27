@@ -10,7 +10,7 @@ import SEO from '../components/SEO'
 import { formatReadingTime } from '../utils/helpers'
 import { rhythm, scale } from '../utils/typography'
 
-const GITHUB_USERNAME = 'JonJee'
+const GITHUB_USERNAME = '738'
 const GITHUB_REPO_NAME = 'blog.holy.kiwi'
 
 class BlogPostTemplate extends React.Component {

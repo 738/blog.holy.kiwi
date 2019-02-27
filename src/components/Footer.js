@@ -12,7 +12,7 @@ class Footer extends React.Component {
         }}
       >
         <a
-          href="https://github.com/JonJee"
+          href="https://github.com/738"
           target="_blank"
           rel="noopener noreferrer"
         >
