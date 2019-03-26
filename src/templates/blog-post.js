@@ -45,7 +45,7 @@ class BlogPostTemplate extends React.Component {
         <AdSense.Google
           client='ca-pub-8206246491652082'
           slot='9015228868'
-          style={{ display: 'block', marginBottom: 20 }}
+          style={{ display: 'block', marginBottom: 20, backgroundColor: '#fff', }}
           format='auto'
           responsive='true'
         />
@@ -53,7 +53,7 @@ class BlogPostTemplate extends React.Component {
         <AdSense.Google
           client='ca-pub-8206246491652082'
           slot='9945167157'
-          style={{ display: 'block', marginTop: 20 }}
+          style={{ display: 'block', marginTop: 20, backgroundColor: '#fff', }}
           format='auto'
           responsive='true'
         />
