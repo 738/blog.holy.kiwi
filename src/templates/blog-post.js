@@ -42,21 +42,21 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
           {` • ${formatReadingTime(post.timeToRead)}`}
         </p>
-        <AdSense.Google
+        {/* <AdSense.Google
           client='ca-pub-8206246491652082'
           slot='9015228868'
           style={{ display: 'block', marginBottom: 20, backgroundColor: '#fff', }}
           format='auto'
           responsive='true'
-        />
+        /> */}
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <AdSense.Google
+        {/* <AdSense.Google
           client='ca-pub-8206246491652082'
           slot='9945167157'
           style={{ display: 'block', marginTop: 20, backgroundColor: '#fff', }}
           format='auto'
           responsive='true'
-        />
+        /> */}
         {/* <p>
           <a href={discussUrl} target="_blank" rel="noopener noreferrer">
             Discuss on Twitter
