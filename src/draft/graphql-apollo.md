@@ -54,3 +54,38 @@ WHERE id = 1;
 ### GraphQL의 핵심
 
 > 그래프큐엘은 달라는대로만 준다.
+
+* 요청
+
+```javascript
+{
+  allPersons {
+    name
+    films {
+      director
+    }
+  }	
+}
+```
+
+* 응답
+```json
+{
+  "data": {
+    "allPersons": [
+      {
+        "name": "Luke Skywalker",
+        "films": [
+          {
+            "director": "George Lucas"
+          },
+          {
+            "director": "George Lucas"
+          },
+          {
+            "director": "George Lucas"
+          }
+        ]
+      },
+……생략
+```
