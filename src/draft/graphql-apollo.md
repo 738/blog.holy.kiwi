@@ -99,3 +99,9 @@ WHERE id = 1;
 ### 리졸버 구현
 
 ### GraphQL 실행 프로세스
+
+## 👸 다시 GraphQL을 정의하자면...
+
+## 🥪 그럼 Apollo는 뭘까
+
+## 🥰 Apollo의 장점
