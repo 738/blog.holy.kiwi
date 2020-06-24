@@ -150,7 +150,6 @@ spoiler: 미래의 나를 위해 쓰는 글
 
 ### [Dynamo](https://apps.apple.com/kr/app/dynamo/id1445910651)
 
-- Magnet 앱 만든 개발자가 만듬
 - 사파리에서 유튜브, 넷플릭스 등을 키보드 단축키로 쉽게 속도 조절 가능
 
 ## CLI
