@@ -10,12 +10,12 @@ spoiler: 미래의 나를 위해 쓰는 글
 
 ### 키보드
 
-#### 단축키
+#### 키보드 > 단축키
 
 - 이전 입력 소스 선택(한영전환)은 `command` + `space`로 변경
 - Spotlight 검색 보기는 `control` + `space`로 변경
 
-#### 텍스트
+#### 키보드 > 텍스트
 
 - 맞춤법 자동 수정 X
 - 자동으로 문장을 대문자로 시작 X
@@ -67,10 +67,79 @@ spoiler: 미래의 나를 위해 쓰는 글
 - Material Theme
   - Material Theme High Contrast 사용중
 - Material Icon Theme
-- FiraCode (폰트)
 - git lens
 - git history
 - Typescript React code snippets
+
+#### 폰트
+
+- FiraCode
+
+#### 설정
+
+- Preferences > Keyboard Shortcuts
+  - 오른쪽 상단에 `Open Keyboard Shortcuts (JSON)` 클릭 후 다음 코드 추가
+  - `command` + 숫자 조합으로 탭 이동 가능
+
+<details>
+<summary>설정 코드 펼치기 / 접기</summary>
+<pre>
+[
+    {
+        "key": "cmd+0",
+        "command": "workbench.action.openLastEditorInGroup"
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.openEditorAtIndex1"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.openEditorAtIndex2"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.openEditorAtIndex3"
+    },
+    {
+        "key": "cmd+4",
+        "command": "workbench.action.openEditorAtIndex4"
+    },
+    {
+        "key": "cmd+5",
+        "command": "workbench.action.openEditorAtIndex5"
+    },
+    {
+        "key": "cmd+6",
+        "command": "workbench.action.openEditorAtIndex6"
+    },
+    {
+        "key": "cmd+7",
+        "command": "workbench.action.openEditorAtIndex7"
+    },
+    {
+        "key": "cmd+8",
+        "command": "workbench.action.openEditorAtIndex8"
+    },
+    {
+        "key": "cmd+9",
+        "command": "workbench.action.openEditorAtIndex9"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.action.focusThirdEditorGroup"
+    }
+]
+</pre>
+</details>
 
 ### [Alfred 4](https://www.alfredapp.com/)
 
