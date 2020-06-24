@@ -224,7 +224,7 @@ chsh -s /usr/bin/zsh
 
 5. [ubuntu mono derivative powerline](https://github.com/powerline/fonts) 폰트 설치
 
-- iTerm 2 -> Preferences -> Profile -> Text -> Font 변경
+iTerm 2 -> Preferences -> Profile -> Text -> Font 변경
 
 6. 다음 레포지토리를 클론하여 `dracula` 테마 적용
 
@@ -232,11 +232,11 @@ chsh -s /usr/bin/zsh
 git clone https://github.com/dracula/iterm.git
 ```
 
-- iTerm 2 -> Preferences -> Profile -> Color -> Color Presets 변경
+iTerm 2 -> Preferences -> Profile -> Color -> Color Presets 변경
 
 7. 터미널에서 username 제거
 
-- `~/.zshrc` 파일 맨밑에 넣어주면 된다.
+`~/.zshrc` 파일 맨밑에 넣어주면 된다.
 
 ```bash
 prompt_context() {
@@ -248,7 +248,7 @@ prompt_context() {
 
 8. `zsh` 플러그인 `zsh-syntax-highlighting` 설치
 
-- 터미널에서 사용 가능한 커맨드는 초록색, 사용 가능하지 않은 커맨드는 빨간색으로 표시해줌
+터미널에서 사용 가능한 커맨드는 초록색, 사용 가능하지 않은 커맨드는 빨간색으로 표시해줌
 
 ```bash
 # brew를 통해 설치해줍니다.
