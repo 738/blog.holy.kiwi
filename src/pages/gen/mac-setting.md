@@ -77,6 +77,7 @@ spoiler: 💻🛠
 
 #### 설정
 
+- Settings > Format On Save 체크
 - Preferences > Keyboard Shortcuts
   - 오른쪽 상단에 `Open Keyboard Shortcuts (JSON)` 클릭 후 다음 코드 추가
   - `command` + 숫자 조합으로 탭 이동 가능
@@ -202,7 +203,6 @@ spoiler: 💻🛠
 ### [Android Studio](https://developer.android.com/studio)
 
 - For Android 개발
-
 
 ## 선택 애플리케이션
 
