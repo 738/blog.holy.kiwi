@@ -322,6 +322,7 @@ prompt_context() {
 brew install zsh-syntax-highlighting
 # 플러그인을 적용합니다.
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# 위 커맨드를 ~/.zshrc 맨 아래에 넣습니다.
 ```
 
 ## 참고
