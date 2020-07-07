@@ -137,6 +137,10 @@ spoiler: 💻🛠
     {
         "key": "ctrl+3",
         "command": "workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "cmd+'",
+        "command": "editor.action.goToTypeDefinition"
     }
 ]
 </pre>
