@@ -4,6 +4,8 @@ date: '2020-06-24'
 spoiler: 💻🛠
 ---
 
+> 업데이트 2021-04-21: 자주 사용하는 애플리케이션 추가함
+
 > 맥북 2015년형에서 2019년형으로 바꾸는 김에 작성하는 나만의 맥북 세팅, 필수 애플리케이션 정리
 
 ## 시스템 환경설정
@@ -61,6 +63,11 @@ spoiler: 💻🛠
 ### [Chrome](https://www.google.com/chrome)
 
 - 세계 1등 브라우저 크롬
+
+### [Whale](https://whale.naver.com/ko/download)
+
+- 요즘은 웨일을 메인으로 쓰고 있다.
+- 크롬에 없는 유용한 기능들이 많다.
 
 ### [VS Code (비주얼 스튜디오 코드)](https://code.visualstudio.com/download)
 
@@ -166,10 +173,29 @@ spoiler: 💻🛠
 
 - 주로 사용하는 Git GUI
 
+### [Git Kraken](https://www.gitkraken.com/)
+
+- Source Tree에서 Git Kraken으로 옮김
+- 매우 직관적인 Git GUI 애플리케이션 (유료)
+
 ### [Magnet (마그넷)](https://apps.apple.com/kr/app/magnet-%EB%A7%88%EA%B7%B8%EB%84%B7/id441258766)
 
 - 유료 애플리케이션 (살 때는 1,200원이었는데 지금보니 3,900원이다)
 - 단축키로 화면 분할을 쉽게 할 수 있게 해줌
+
+### [iShot](https://apps.apple.com/kr/app/ishot-%E6%88%AA%E5%9B%BE-%E9%95%BF%E6%88%AA%E5%9B%BE-%E8%B4%B4%E5%9B%BE-%E5%BD%95%E5%B1%8F%E5%B7%A5%E5%85%B7/id1485844094?mt=12)
+
+- 스크린샷을 도와주는 유틸 앱
+- 편한 단축키 지원
+- 스크린샷 후 꾸미기 지원
+
+### [올ㅋ사전](http://allkdic.xoul.kr/)
+
+- 언제 어디서든 단축키 하나로 사전 팝업을 켤 수 있어서 좋음
+
+### [GIPHY Capture](https://giphy.com/apps/giphycapture)
+
+- 빠르게 Gif 파일을 만들 수 있어 좋음
 
 ### [Slack](https://apps.apple.com/kr/app/slack/id803453959)
 
@@ -187,6 +213,13 @@ spoiler: 💻🛠
 
 - 정리해놓기 좋은 앱
 - 에버노트랑 노션이랑 기본 메모앱이랑 같이 쓰고 있다.
+
+### [TickTick](https://ticktick.com/)
+
+- 할일 목록을 체계적으로 관리할 수 있음
+- 마크다운도 가능
+- 모바일, 데스크탑 모두 지원함
+- 유료임
 
 ### [Iterm 2](https://www.iterm2.com/)
 
@@ -241,6 +274,8 @@ spoiler: 💻🛠
 ```
 
 ### git
+
+- mac은 설치되어 
 
 ### [node.js](https://nodejs.org/ko/download/)
 
